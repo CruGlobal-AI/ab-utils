@@ -16,8 +16,8 @@ jobs:
            id: generate-token
            uses: actions/create-github-app-token@v2
            with:
-              app-id: ${{ vars.GS_DEV_APP_ID }}
-              private-key: ${{ secrets.GS_DEV_APP_PK }}
+              app-id: ${{ vars.DS_GH_APP_ID }}
+              private-key: ${{ secrets.DS_GH_APP_PK }}
 
          - name: Checkout Master
            uses: actions/checkout@v5
